@@ -4,52 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Bio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
     <h1>Meet Our Team</h1>
-    <!-- Example team logo -->
     <img src="img/team-logo.png" alt="Team Logo" class="team-logo">
 
-    <!-- Navigation menu to switch between sections -->
     <nav>
         <button onclick="showSection('bios')">Team Bios</button>
         <button onclick="showSection('vision')">Team Vision</button>
     </nav>
 </header>
 
-<!-- Team bios section (default section) -->
 <div id="bios" class="container">
-    <!-- Each card represents an individual team member -->
     <div class="card">
-        <h2>John Doe</h2>
-        <p>Frontend Developer</p>
+        <img src="img/shreeya.JPG" alt="Shreeya Mendpara" class="profile-pic">
+        <h2>Shreeya Mendpara</h2>
+        <p>UI/UX Designer</p>
         <button onclick="toggleBio('bio1')">Show Bio</button>
-        <p id="bio1" class="bio">John is a skilled frontend developer with 5 years of experience in creating responsive web applications.</p>
+        <p id="bio1" class="bio">Shreeya is a UI/UX designer with a passion of creating aesthetically please visuals for projects.</p>
+        <div class="moodboard">
+            <img src="img/image1.jpg" alt="picture 1">
+            <img src="img/image2.jpg" alt="picture 2">
+            <img src="img/image3.jpg" alt="picture 3">
+            <a href="https://github.com/mshreeya01">GitHub</a>
+        </div>
     </div>
+    
+    <div class="card mirian-card">
+        <h2>Mirian Ventura-Garcia</h2>
+        <img src="img/pfp.jpg" alt="Chopper" width="120" height="120" class="pfp">
+        <p>Front-End Developer</p>
+        <button onclick="toggleBio('bio2')">Show Bio</button>
+        <p id="bio2" class="bio">Mirian is an aspiring developer who enjoys creating interactive and responsive web applications</p>
+        <ul class="moodboard-list">
+                <img src="img/mb1.jpg" alt="comp science cat" width="120" height="120">
+                <img src="img/mb2.jpg" alt="inspo" width="120" height="120">
+                <img src="img/mb3.jpeg" alt="making website" width="150" height="120">
+                <img src="img/mb4.jpg" alt="dream setup" width="150" height="120">
+        </ul>
+    </div>
+    
+    <div class="card">
+        <img src="img/amelia.jpg" alt="Amelia Eckard" class="profile-pic">
+        <h2>Amelia Eckard</h2>
+        <p>AR/VR Accessibility Researcher</p>
+        <button onclick="toggleBio('bio3')">Show Bio</button>
+        <p id="bio3" class="bio">Amelia is a junior CS student at UNC Charlotte specializing in AI, Robotics, and Gaming. Passionate about making technology accessible through AR/VR solutions and creative coding.</p>
+        <div class="moodboard">
+            <img src="img/amelia-mb1.jpg" alt="Desk w/ Breakfast">
+            <img src="img/amelia-mb2.jpg" alt="Profile">
+            <img src="img/amelia-mb3.jpg" alt="Coffee in the garden">
+            <a href="https://ameliaeckard.com">Portfolio</a>
+        </div>
+    </div>
+
     <div class="card">
         <h2>Jane Smith</h2>
         <p>Backend Developer</p>
         <button onclick="toggleBio('bio2')">Show Bio</button>
         <p id="bio2" class="bio">Jane is a backend developer specializing in server-side logic and database management.</p>
     </div>
-    <div class="card">
-        <h2>Emily Johnson</h2>
-        <p>UI/UX Designer</p>
-        <button onclick="toggleBio('bio3')">Show Bio</button>
-        <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
-    </div>
 </div>
 
-<!-- Team vision/mission statement section (hidden by default) -->
 <div id="vision" class="container" style="display: none;">
     <h2>Our Mission Statement</h2>
-    <p>We strive to create a collaborative, inclusive, and innovative environment where team members feel empowered to push boundaries and achieve excellence in their craft. Our mission is to deliver high-quality solutions that meet and exceed our clients' expectations.</p>
+    <p>We aim to create an environment where our clients feel comfortable sharing their expectations and are satisfied with what we present them. We strive to create a collaborative, inclusive and honest environment where we are not afraid of pushing boundaries and doing better than before on all our projects.</p>
 </div>
 
-<script src="script.js"></script> <!-- Link to external JavaScript file -->
+<script src="script.js"></script>
 
 </body>
 </html>

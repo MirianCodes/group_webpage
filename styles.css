@@ -95,3 +95,26 @@ button:hover {
     align-items: center;
     margin-bottom: 8px;
 }
+
+/* Mirian's custom card */
+.mirian-card {
+    background-color: #e6f2ff;
+    border: 2px solid #b3d7ff;
+    color: #1e3a5f;
+}
+
+
+
+
+/* name */
+.mirian-card h2 {
+    color: #ec8df2;
+}
+
+/* profile image */
+.pfp {
+    border-radius: 50%;
+    border: 3px solid #ec8df2;
+    margin-bottom: 10px;
+}
+

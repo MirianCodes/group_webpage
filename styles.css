@@ -88,3 +88,10 @@ button {
 button:hover {
     background: #0056b3;
 }
+/* moodboard css */
+
+.moodboard-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
